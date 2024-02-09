@@ -1,0 +1,14 @@
+@import "colors";
+
+.nav-main {
+    background: $primary;
+    
+    .main-logo {
+        max-width: 10rem;
+    }
+
+    .collapsing ul, .show ul {
+        padding-top: 20px;
+        gap: 0 !important;
+    }
+}

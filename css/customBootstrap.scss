@@ -1,0 +1,22 @@
+﻿@import "colors";
+@import "../bootstrap/scss/functions";
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1000px,
+  xxl: 1000px
+) !default;
+
+// variable value overriding
+
+@import "../bootstrap/scss/variables";
+
+// variable-dependent overriding
+
+@import "../bootstrap/scss/mixins";
+
+@import "../bootstrap/scss/bootstrap";
+
+// standard overriding
