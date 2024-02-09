@@ -17,3 +17,7 @@ body {
   background-color: #0F0A19;
   overflow-x: hidden;
 }
+
+p {
+  margin-bottom: 0;
+}
