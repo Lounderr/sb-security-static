@@ -11994,3 +11994,7 @@ textarea.form-control-lg {
   background: #FFF;
   color: #000;
 }
+
+.rounded {
+  border-radius: 10px;
+}

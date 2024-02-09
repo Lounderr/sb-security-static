@@ -36,7 +36,6 @@
   background: radial-gradient(circle at left, rgba(33, 20, 61, 0.5) 0%, rgba(69, 54, 87, 0.2) 70%, rgba(255, 255, 255, 0.1) 100%);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  border-radius: 10px;
 }
 
 .progress-step {
@@ -46,6 +45,22 @@
   width: 60px;
   aspect-ratio: 1/1;
   font-size: 32px;
+}
+
+.link-icon {
+  color: #A367B1;
+}
+
+.team-pfp {
+  height: 85px;
+}
+
+.client-card-date {
+  color: #A367B1;
+}
+
+.footer-logo {
+  width: 160px;
 }
 
 @media (max-width: 991.98px) {
@@ -61,6 +76,16 @@
   }
   .hero-section .hero-stats {
     text-align: center !important;
+  }
+  .payment-plans {
+    padding-top: 2rem;
+  }
+  .payment-plans h2,
+  .payment-plans li {
+    text-align: center !important;
+  }
+  .payment-plans ul {
+    padding-bottom: 3rem;
   }
 }
 @media (max-width: 575.98px) {
