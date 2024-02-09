@@ -19,4 +19,26 @@ $container-max-widths: (
 
 @import "../bootstrap/scss/bootstrap";
 
+
+.btn {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-inline: 35px;
+  padding-block: 8px;
+  font-size: 1.05rem;
+  white-space: nowrap;
+}
+
+.btn-secondary {
+  background: rgb(33,20,61);
+  background: radial-gradient(circle at left, rgba(33,20,61,0.6) 0%, rgba(69,54,87,0.3) 70%, rgba(255,255,255,0.1) 100%); 
+
+  border: solid #FFF 1px;
+
+  &:hover {
+    background: #FFF;
+    color: #000;
+  }
+}
+
 // standard overriding

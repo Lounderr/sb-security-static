@@ -1,14 +1,48 @@
 @import "colors";
+@import '../bootstrap/scss/functions';
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins/breakpoints";
 
 .nav-main {
-    background: $primary;
-    
+    background: $bg-primary;
+
     .main-logo {
         max-width: 10rem;
     }
 
-    .collapsing ul, .show ul {
+    .collapsing ul,
+    .show ul {
+
         padding-top: 20px;
         gap: 0 !important;
+    }
+}
+
+.hero-web {
+    position: absolute;
+    bottom: 0;
+    right: -70px;
+    height: 80vh;
+    z-index: -1 !important;
+}
+
+@include media-breakpoint-down(lg) {
+    .nav-margin {
+        height: 75px;
+    }
+
+    .hero-section {
+        .hero-pane {
+            gap: 10px !important;
+            text-align: center;
+
+            div {
+                justify-content: center;
+            }
+        }
+
+        .hero-stats {
+            text-align: center !important;
+        }
     }
 }

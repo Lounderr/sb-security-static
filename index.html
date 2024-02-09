@@ -12,10 +12,10 @@
 </head>
 
 <body>
-    <nav class="container-sm navbar navbar-expand-lg nav-main py-4 px-3">
+    <nav class="fixed-top container navbar navbar-expand-lg nav-main py-4 px-3">
         <div class="container-fluid fw-bold">
             <a class="navbar-brand text-white" href="#">
-                <img class="main-logo" src="/img/sbSecurityLogo.svg" alt="Logo">
+                <img class="main-logo" src="/img/sbSecurityLogo.svg" alt="Logo" />
             </a>
             <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars-staggered text-white fa-lg"></i>
@@ -33,10 +33,29 @@
                     </li>
                 </ul>
 
-                <a href="#" class="ms-auto d-flex gap-2 text-uppercase text-nowrap nav-link">Contact us<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="#" class="ms-auto text-uppercase text-nowrap nav-link">Contact us<i class="ms-3 fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
         </div>
     </nav>
+
+    <div class="nav-margin"></div>
+
+    <section class="hero-section container">
+        <div class="row vh-100 align-items-center justify-content-between">
+            <div class="hero-pane col-sm px-4 d-flex flex-column gap-4">
+                <h1 class="h5 fw-light">Smart Contract Security Company</h1>
+                <h2 class="h2 fw-bold">Ensure Smart Contract Integrity <br />with Expert Auditing</h2>
+                <div class="d-flex gap-4 mt-4 flex-wrap">
+                    <a href="" class="btn btn-primary">Get a quote<i class="ms-3 fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="" class="btn btn-secondary">Audits<i class="ms-3 fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <span class="hero-stats col-lg px-4 display-5 text-uppercase fw-lighter text-end">Over 25 audits<br />
+                <bold class="fw-bold">this year</bold> only
+            </span>
+        </div>
+        <img class="web hero-web" src="/img/webBg.svg" alt="">
+    </section>
 
 
 
