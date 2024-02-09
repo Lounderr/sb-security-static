@@ -6,8 +6,8 @@
 @import "../bootstrap/scss/mixins/breakpoints";
 
 .nav-main {
-    background: transparentize($bg-primary, 0.5);
-    backdrop-filter: blur(50px);
+    background: transparentize($bg-primary, 0.05);
+    backdrop-filter: blur(1px);
 
     .main-logo {
         max-width: 10rem;

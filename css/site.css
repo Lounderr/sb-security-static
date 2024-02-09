@@ -1,7 +1,7 @@
 .nav-main {
-  background: rgba(15, 10, 25, 0.5);
-  -webkit-backdrop-filter: blur(50px);
-          backdrop-filter: blur(50px);
+  background: rgba(15, 10, 25, 0.95);
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
 }
 .nav-main .main-logo {
   max-width: 10rem;
