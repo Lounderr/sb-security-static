@@ -1,20 +1,46 @@
+@use 'sass:color';
+
 @import "colors";
 @import '../bootstrap/scss/functions';
 @import "../bootstrap/scss/variables";
 @import "../bootstrap/scss/mixins/breakpoints";
 
 .nav-main {
-    background: $bg-primary;
+    background: transparentize($bg-primary, 0.5);
+    backdrop-filter: blur(50px);
 
     .main-logo {
         max-width: 10rem;
     }
 
+    // .collapsing {
+    //     border-bottom: 1px solid #ffffff00;
+    // }
+
+    // .show {
+    //     border-bottom: 1px solid #ffffffA0;
+
+    // }
+
+    .show {
+        // height: 100vh;
+        transition: height ease-in-out 0.25s !important;
+      
+    }
+
+    .collapsing, .show {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
     .collapsing ul,
     .show ul {
-
-        padding-top: 20px;
+        padding-top: 30px;
         gap: 0 !important;
+
+        li {
+            margin-bottom: 25px;
+        }
     }
 }
 
