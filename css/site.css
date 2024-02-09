@@ -24,12 +24,19 @@
   margin-bottom: 25px;
 }
 
-.hero-web {
+.web {
   position: absolute;
   bottom: 0;
-  right: -70px;
-  height: 80vh;
   z-index: -1 !important;
+  height: 80vh;
+}
+
+.payment-web {
+  left: -500px;
+}
+
+.hero-web {
+  right: -70px;
 }
 
 .info-card {
@@ -77,15 +84,9 @@
   .hero-section .hero-stats {
     text-align: center !important;
   }
-  .payment-plans {
-    padding-top: 2rem;
-  }
-  .payment-plans h2,
-  .payment-plans li {
-    text-align: center !important;
-  }
-  .payment-plans ul {
-    padding-bottom: 3rem;
+  .payment-plans div {
+    border: none !important;
+    padding: 0 !important;
   }
 }
 @media (max-width: 575.98px) {
