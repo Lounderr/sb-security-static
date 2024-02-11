@@ -44,6 +44,19 @@
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
 }
+.info-card::before {
+  content: "";
+  opacity: 7%;
+  border-radius: 5px;
+  position: absolute;
+  inset: 0 0 0 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+  background-repeat: repeat;
+  background-position: center center;
+  background-image: url(https://grainy-gradients.vercel.app/noise.svg);
+}
 
 .progress-step {
   border-radius: 5px;
@@ -96,4 +109,30 @@
   .info-card .progress-step {
     display: none !important;
   }
+}
+.audits-panel {
+  background-color: #1b1625;
+}
+
+.audit-info {
+  background-color: #171220;
+}
+
+.audit-pfp {
+  height: 60px;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.audit-open-pfp {
+  height: 80px;
+}
+
+.secondary-color {
+  color: #A367B1;
+}
+
+.secondary-bg {
+  background: #A367B1;
 }

@@ -63,6 +63,20 @@
 .info-card {
     background: radial-gradient(circle at left, rgba(33, 20, 61, 0.5) 0%, rgba(69, 54, 87, 0.2) 70%, rgba(255, 255, 255, 0.1) 100%);
     backdrop-filter: blur(5px);
+
+    &::before {
+        content: "";
+        opacity: 7%;
+        border-radius: 5px;
+        position: absolute;
+        inset: 0 0 0 0;
+        width: 100%;
+        height: 100%;
+        mix-blend-mode: multiply;
+        background-repeat: repeat;
+        background-position: center center;
+        background-image: url(https://grainy-gradients.vercel.app/noise.svg);
+    }
 }
 
 .progress-step {
@@ -118,10 +132,10 @@
     }
 
     .payment-plans {
-       div {
+        div {
             border: none !important;
             padding: 0 !important;
-       }
+        }
     }
 }
 
@@ -134,4 +148,33 @@
             display: none !important;
         }
     }
+}
+
+
+// AUDITS PAGE
+
+.audits-panel {
+    background-color: #1b1625;
+}
+
+.audit-info {
+    background-color: #171220;
+}
+
+.audit-pfp {
+    height: 60px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.audit-open-pfp {
+    height: 80px;
+}
+
+.secondary-color {
+    color: $bg-secondary;
+}
+
+.secondary-bg {
+    background: $bg-secondary;
 }
